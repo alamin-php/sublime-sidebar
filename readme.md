@@ -1,49 +1,10 @@
-# Sidebar Enhancements
+# Sublime Sidebar
 
-## Description
-
-Provides enhancements to the operations on Sidebar of Files and Folders for Sublime Text. See: http://www.sublimetext.com/
-
-Notably provides delete as "move to trash", open with.. and a clipboard. Close, move, open and restore buffers affected by a rename/move command.
-
-Provides the basics: new file/folder, edit, open/run, reveal, find in selected/parent/project, cut, copy, paste, paste in parent, rename, move, delete, refresh....
-
-The not so basic: copy paths as URIs, URLs, content as UTF8, content as data:uri base64 ( nice for embedding into CSS! ), copy as tags img/a/script/style, duplicate
-
-Preference to control if a buffer should be closed when affected by a deletion operation.
-
-Allows to display "file modified date" and "file size" on statusbar.
-
-![Screenshot](http://dl.dropbox.com/u/43596449/tito/sublime/SideBar/screenshot.png)
+A fork of the SideBarEnhancements package, tweaked to remove menu items and features I never use.
 
 ## Installation
 
-To install SideBarEnhancements, Install Package Control 2 First. See:https://sublime.wbond.net/installation
-
-Then after restarting, with package control Install this Package.
-
-WARNING: Manual installation:
-
-* We don't have time to workaround, provide support and follow threads of  all the possible problems that installing manually can cause.
-* Most users will clone this repo, with sublime opened, which will Install the version of the package for ST2 on ST3, if you do this with ST3 and opened, the installition is likely screwed up.
-* Install with package control please.
-
-Troubleshooting Installtion:
-
-If you have problems with the installtion, do this:
-
-* Open the package folder. Main menu -> Preferences -> Browse Packages.
-* Close Sublime Text.
-* Remove the folder "Packages/SideBarEnhancements"
-* Remove the folder "User/SideBarEnhancements"
-* Navigate one folder up, to "Installed Packages/", check for any instance of SideBarEnhancements and remove it.
-* Open ST, with Package Control go to : Remove Package, check for any instance of SideBarEnhancements and remove it.
-* Restart ST
-* Open ST, check if there is any entry about SideBarEnhancements in Package Control(in sections: "Remove Package" and just in case in "Enable Package")
-* Repeat until you find there no entry about SideBarEnhancements
-* Restart ST
-* Install it via Package Control.
-* It works
+Clone this repo into your Sublime Text `Packages` directory.
 
 ## F12 key
 
@@ -117,12 +78,6 @@ To open it, right-click on any file in an open project and select `Open With > E
 - On OSX, the 'application' property simply takes the *name* of an application, to which the file at hand's full path will be passed as if with `open ...`, e.g.: "application": "Google Chrome"
 - On OSX, invoking *shell* commands is NOT supported.
 
-## FAQ
-
-Q: Why the menu is not shown on `Open Files`?
-
-- It should be mentioned that the package's context menu is only available for files and folders **in a project (section `Folders` in the side bar)**, and _not_ on the open files listed at the top of the side bar, due to a limitation of ST.
-
 ## Using the External Libraries
 
  * "getImageInfo" to get width and height for images from "bfg-pages". See: http://code.google.com/p/bfg-pages/
@@ -130,25 +85,3 @@ Q: Why the menu is not shown on `Open Files`?
  * "send2trash" to be able to send to the trash instead of deleting for ever!. See: http://pypi.python.org/pypi/Send2Trash
  * "hurry.filesize" to be able to format file sizes. See: http://pypi.python.org/pypi/hurry.filesize/
  * "Edit.py" ST2/3 Edit Abstraction. See: http://www.sublimetext.com/forum/viewtopic.php?f=6&t=12551
-
-## Source-code
-
-https://github.com/titoBouzout/SideBarEnhancements
-
-## Forum Thread
-
-http://www.sublimetext.com/forum/viewtopic.php?f=5&t=3331
-
-# Contributors:
-
-	- Leif Ringstad
-	- Sven Axelsson
-	- Dalibor Simacek
-	- Stephen Horne
-	- Eric Eldredge
-	- Till Theis
-	- Jeremy Gailor
-
-# Like it? Support
-
-	- https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=YNNRSS2UJ8P88&lc=UY&item_name=Support%20%20SideBarEnhancements%20Developer&amount=12%2e00&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
