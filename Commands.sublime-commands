@@ -78,12 +78,18 @@
     {
         "caption": "File: Open In Browser - Testing Server",
         "command": "side_bar_open_in_browser",
-        "args":{"paths":[], "type":"testing"}
+        "args": {
+            "paths": [],
+            "type": "testing"
+        }
     },
     {
         "caption": "File: Open In Browser - Production Server",
         "command": "side_bar_open_in_browser",
-        "args":{"paths":[], "type":"production"}
+        "args": {
+            "paths": [],
+            "type": "production"
+        }
     },
     {
         "caption": "Side Bar: Refresh",
